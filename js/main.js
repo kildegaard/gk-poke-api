@@ -9,7 +9,7 @@ let pokemon = ''
 
 
 const cargarPkmn = () => {
-    if (pokemon) {
+    if (textPkmn.value) {
         pokemon = textPkmn.value;
         alert('Pokemon elegido: ' + pokemon.toLowerCase());
     }
