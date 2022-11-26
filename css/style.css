@@ -4,20 +4,56 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "pokeFont llena";
+    src: url("../assets/fonts/PokemonSolidNormal-xyWR.ttf");
+}
+
+@font-face {
+    font-family: "pokeFont vacia";
+    src: url("../assets/fonts/PokemonHollowNormal-pyPZ.ttf");
+}
+
+@font-face {
+    font-family: "pokeFont GB";
+    src: url("../assets/fonts/PokemonGb-RAeo.ttf");
+}
+
 body {
     background: linear-gradient(to left, lightcoral, lightseagreen);
     text-align: center;
     background-image: url('https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: 'pokeFont GB';
+}
+
+h1 {
+    font-family: 'pokeFont llena';
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0 10px;
 }
 
 h2 {
-    margin: 10px 0;
+    /* margin: 5px 0; */
+    font-family: pokeFont vacia;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
 
 .pokecard {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 
     border: 5px solid lightcoral;
@@ -47,7 +83,6 @@ h2 {
 .btn--primary {
     margin: 10px;
     width: 150px;
-    /* height: 30px; */
 
     border: 2px solid red;
     border-radius: 20px;
@@ -64,4 +99,18 @@ h2 {
 .btn--primary:hover {
     transform: scale(1.05);
     transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    body {
+        background-image: url('https://wallup.net/wp-content/uploads/2016/05/24/143432-nature-Pokemon.jpg');
+    }
+
+    .pokecard {
+        width: 400px;
+    }
 }
