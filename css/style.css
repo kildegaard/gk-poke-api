@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'pokeFont GB';
 }
 
 input {
@@ -43,7 +44,7 @@ h1 {
 
 h2 {
     /* margin: 5px 0; */
-    font-family: pokeFont vacia;
+    font-family: 'pokeFont vacia';
     font-size: 2em;
     line-height: 1.5em;
     margin-bottom: 10px;
@@ -103,7 +104,7 @@ h2 {
 
 @media screen and (max-width: 700px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     body {
@@ -111,6 +112,6 @@ h2 {
     }
 
     .pokecard {
-        width: 400px;
+        width: 390px;
     }
 }
